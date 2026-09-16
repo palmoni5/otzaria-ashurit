@@ -21,6 +21,17 @@ SCALE = 0.13
 COLS = 12
 
 
+def _label_font():
+    """גופן הכותרת הוא קישוט בלבד: על ראנר בלי גופני מערכת נופלים לברירת
+    המחדל של Pillow ולא מפילים את הבנייה."""
+    for name in ("arial.ttf", "DejaVuSans.ttf", "LiberationSans-Regular.ttf"):
+        try:
+            return ImageFont.truetype(name, 15)
+        except OSError:
+            continue
+    return ImageFont.load_default()
+
+
 def _path(font: TTFont, name: str) -> pathops.Path:
     path = pathops.Path()
     font.getGlyphSet()[name].draw(path.getPen())
@@ -40,7 +51,7 @@ def sheet(font_path: Path, out: Path) -> Path:
     rows = (len(names) + COLS - 1) // COLS
     img = Image.new("RGB", (int(COLS * (w + pad) + pad), int(rows * (h + pad) + head + pad)), "white")
     draw = ImageDraw.Draw(img)
-    label = ImageFont.truetype("arial.ttf", 15)
+    label = _label_font()
     draw.text((img.width // 2, 10), f"{font_path.stem} · {fontinfo.VERSION}",
               font=label, fill=(90, 90, 90), anchor="mt")
 
