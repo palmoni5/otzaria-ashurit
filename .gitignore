@@ -6,3 +6,4 @@ package/.dart_tool/
 package/pubspec.lock
 test_consumer/.dart_tool/
 test_consumer/pubspec.lock
+test_consumer/build/
