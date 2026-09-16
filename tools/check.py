@@ -41,10 +41,18 @@ def check(path: Path, master) -> list[str]:
             if widths != sorted(widths) or widths[0] <= base:
                 bad.append(f"מדרגות {letter} אינן עולות: {base} -> {widths}")
 
-    # הניקוד נשאר מחוץ לגופן הסת"ם דווקא, כדי שהחלפת גופן אוטומטית תפעל.
-    pointed = any(0x0591 <= code <= 0x05C7 and code != fontinfo.NUN_HAFUKHA for code in cmap)
-    if pointed != ("Nikud" in master.family):
-        bad.append("כיסוי הניקוד אינו תואם למשפחה")
+    # הניקוד נשאר מחוץ לגופן הסת"ם דווקא, כדי שהחלפת גופן אוטומטית תפעל;
+    # ובמשפחת הניקוד הכיסוי חייב להיות מלא, שאם ייפול תו אחד הוא יילקח
+    # מגופן אחר ויבלוט באמצע המילה.
+    pointed = {code for code in cmap if 0x0591 <= code <= 0x05C7
+               and code != fontinfo.NUN_HAFUKHA}
+    if "Nikud" in master.family:
+        missing = set(fontinfo.MARKS) - pointed
+        if missing:
+            bad.append("תווי ניקוד חסרים: "
+                       + ", ".join(f"U+{code:04X}" for code in sorted(missing)))
+    elif pointed:
+        bad.append("גופן הסת\"ם ממפה ניקוד, ולכן נפילת גופן לא תפעל")
 
     bad += _charstring_widths(font)
 

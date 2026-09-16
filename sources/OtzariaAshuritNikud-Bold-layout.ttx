@@ -345,6 +345,7 @@
           <Substitution in="uni059B" out="uni25CC,uni059B"/>
           <Substitution in="uni059C" out="uni25CC,uni059C"/>
           <Substitution in="uni059E" out="uni25CC,uni059E"/>
+          <Substitution in="uni05A2" out="uni25CC,uni05A2"/>
           <Substitution in="uni05A3" out="uni25CC,uni05A3"/>
           <Substitution in="uni05A4" out="uni25CC,uni05A4"/>
           <Substitution in="uni05A5" out="uni25CC,uni05A5"/>
@@ -2066,6 +2067,7 @@
             <Glyph value="uni05BB"/>
             <Glyph value="uni05BD"/>
             <Glyph value="uni05B305BD"/>
+            <Glyph value="uni05A2"/>
           </MarkCoverage>
           <BaseCoverage>
             <Glyph value="uni05D0"/>
@@ -2135,7 +2137,7 @@
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
-            <!-- MarkCount=21 -->
+            <!-- MarkCount=22 -->
             <MarkRecord index="0">
               <Class value="0"/>
               <MarkAnchor Format="1">
@@ -2280,6 +2282,13 @@
               <Class value="0"/>
               <MarkAnchor Format="1">
                 <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </MarkAnchor>
+            </MarkRecord>
+            <MarkRecord index="21">
+              <Class value="0"/>
+              <MarkAnchor Format="1">
+                <XCoordinate value="97"/>
                 <YCoordinate value="0"/>
               </MarkAnchor>
             </MarkRecord>
@@ -5631,9 +5640,10 @@
             <Glyph value="uni05A7"/>
             <Glyph value="uni05AA"/>
             <Glyph value="uni05BD"/>
+            <Glyph value="uni05A2"/>
           </Coverage>
           <ValueFormat value="3"/>
-          <!-- ValueCount=10 -->
+          <!-- ValueCount=11 -->
           <Value index="0" XPlacement="-135" YPlacement="-85"/>
           <Value index="1" XPlacement="-65" YPlacement="-85"/>
           <Value index="2" XPlacement="-195" YPlacement="-85"/>
@@ -5644,6 +5654,7 @@
           <Value index="7" XPlacement="-185" YPlacement="-85"/>
           <Value index="8" XPlacement="-205" YPlacement="-85"/>
           <Value index="9" XPlacement="-145" YPlacement="0"/>
+          <Value index="10" XPlacement="-135" YPlacement="-85"/>
         </SinglePos>
       </Lookup>
       <Lookup index="20">
@@ -5775,6 +5786,7 @@
       <ClassDef glyph="uni059F" class="3"/>
       <ClassDef glyph="uni05A0" class="3"/>
       <ClassDef glyph="uni05A1" class="3"/>
+      <ClassDef glyph="uni05A2" class="3"/>
       <ClassDef glyph="uni05A3" class="3"/>
       <ClassDef glyph="uni05A4" class="3"/>
       <ClassDef glyph="uni05A5" class="3"/>

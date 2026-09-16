@@ -3,7 +3,7 @@ name: otzaria_ashurit
 description: >-
   Otzaria Ashurit — גופן כתב אשורית לטור הסת"ם ולטור הניקוד של תיקון
   הקוראים באוצריא, בשתי משפחות ובשני משקלים.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/palmoni5/otzaria-ashurit
 publish_to: "none"
 
