@@ -1,0 +1,101 @@
+Personal Use License — Otzaria Ashurit
+Version 1.0
+
+Copyright (c) 2026 Otzaria Project (אוצריא)
+All rights reserved.
+
+
+SCOPE
+-----
+This license applies to the Otzaria Ashurit and Otzaria Ashurit Nikud
+typefaces — the font source files in this repository, the compiled font
+files built from them, the build scripts, and any other content of this
+repository not stated to be otherwise licensed.
+
+This license does NOT apply to third-party tools used to build the fonts
+(Python, fontTools, skia-pathops, Pillow and other dependencies). Those
+remain subject to their own respective licenses.
+
+
+1. Personal Use Permission
+Permission is granted to an individual natural person to download,
+install, use, study, and modify the covered fonts solely for that
+person's own private, personal, and non-commercial use — including
+setting and printing documents for that person's own use.
+
+2. No Public Use
+Without prior express written permission from the copyright holder, you
+may not use the covered fonts, or any modified or derivative version of
+them, in any product, project, service, platform, website, application,
+plugin, library, API, bot, database, document, publication, or other
+system that is made available to, distributed to, or used for the
+benefit of any third party or members of the public.
+
+This restriction applies whether the public use is commercial,
+non-commercial, charitable, educational, open-source, freeware, paid, or
+provided without charge.
+
+3. Otzaria Exception
+Notwithstanding sections 2, 4, 5 and 6, the Otzaria Project may bundle,
+embed, distribute, and display the covered fonts as an integral part of
+the Otzaria application (otzaria.org) and its installers and packages,
+on any platform, and may embed them in files that the application
+produces for its users, such as exported or printed PDF documents.
+
+A person who receives the covered fonts this way — as part of the
+Otzaria application — may use them within that application, and may use
+documents the application produced with them, without any further
+permission. That person receives no right to extract, copy, install,
+redistribute, or otherwise use the fonts outside the Otzaria
+application; for any such use, sections 1, 2 and 4 through 8
+apply in full.
+
+This exception is granted to the Otzaria Project alone. It does not
+extend to any fork, derivative, repackaging, or redistribution of the
+Otzaria application by any other person or entity.
+
+4. No Distribution
+You may not copy, publish, redistribute, sublicense, sell, lend,
+transfer, upload, mirror, or otherwise make the covered fonts, their
+source files, compiled versions, modified versions, or derivative works
+available to any other person or entity.
+
+5. No Organizational Use
+No company, organization, association, institution, nonprofit, charity,
+educational institution, government body, community, or other legal
+entity may use the covered fonts — including for internal purposes —
+without prior express written permission from the copyright holder.
+
+6. No Embedding or Bundling
+You may not embed the covered fonts in, or bundle them with, any
+software, application, document, electronic publication, or file that is
+distributed or made available to any other person or entity. Embedding
+in a document that remains in your own private use is permitted.
+
+7. Private Modifications
+You may create modifications solely for your own permitted personal use.
+You may not publish, distribute, contribute, submit, or make those
+modifications available to others without prior express written
+permission.
+
+8. Attribution
+Any permitted use, copy, modification, or derivative work of the covered
+fonts — including ingestion, training, processing, or reuse by language
+models (LLMs) or any other automated system — requires clear credit to
+the Otzaria Project (otzaria.org).
+
+This attribution is an integral part of the license terms, and the
+obligation to give credit remains in force even after a separate
+permission to use the fonts has been granted.
+
+9. Permission for Other Uses
+Any use not expressly permitted by this license requires prior express
+written permission from the copyright holder.
+Permission may be requested by contacting: otzaria.1@gmail.com
+
+10. No Warranty
+THE FONTS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES,
+OR OTHER LIABILITY ARISING FROM THE FONTS OR THEIR USE.

@@ -48,17 +48,54 @@ python src/build.py out
 
 ```bash
 pip install -r requirements-qa.txt
-python tools/check.py out                 # בדיקות תקינות
+python tools/package.py out               # הרכבת חבילת ה-Flutter
+python tools/check.py out                 # בדיקות תקינות וחוזה החבילה
 python tools/proof.py out qa              # דפי הוכחה, גליף גליף
 python tools/verify.py out reference_dir  # השוואה מול קבצים קודמים
 ```
+
+## צריכה כחבילת Flutter
+
+התיקייה `package/` היא חבילת Flutter תקינה, וקובצי הגופן מקומטים בה תחת
+`lib/` — תלות git מושכת את המאגר עצמו ולא את נכסי הרילייס. האפליקציה
+הצורכת מצהירה:
+
+```yaml
+dependencies:
+  otzaria_ashurit:
+    git:
+      url: https://github.com/palmoni5/otzaria-ashurit.git
+      path: package
+
+flutter:
+  fonts:
+    - family: Otzaria Ashurit
+      fonts:
+        - asset: packages/otzaria_ashurit/OtzariaAshurit-Regular.otf
+        - asset: packages/otzaria_ashurit/OtzariaAshurit-Bold.otf
+          weight: 700
+    - family: Otzaria Ashurit Nikud
+      fonts:
+        - asset: packages/otzaria_ashurit/OtzariaAshuritNikud-Regular.otf
+        - asset: packages/otzaria_ashurit/OtzariaAshuritNikud-Bold.otf
+          weight: 700
+```
+
+**שם החבילה, נתיב ה-`path` ושמות הקבצים הם חוזה** — שינוי בהם שובר את
+הבנייה של הצרכן. `tools/check.py` אוכף אותו, ואוכף גם שהקבצים שבחבילה
+הם בדיוק הבנייה הנוכחית. `lib/otzaria_ashurit.dart` מחזיק את שמות שתי
+המשפחות כקבועים, כדי שלא ייכתבו כמחרוזות חופשיות.
+
+`package/pubspec.yaml` נוצר מ-`tools/package.py` ואין לערכו ביד; גרסתו
+נגזרת מ-`VERSION` — `1.002` הופך ל-`1.0.2`.
 
 ## מבנה המאגר
 
 ```
 sources/    קובצי המקור — UFO לכל משקל, ו-TTX לטבלאות הפריסה
 src/        הבנייה: הרכבת UFO לגופן, ומתן השמות והגרסה
-tools/      בדיקות והוכחות; אינם חלק מן הבנייה
+tools/      בדיקות, הוכחות והרכבת החבילה
+package/    חבילת ה-Flutter — נוצרת מ-tools/package.py ומקומטת לגיט
 VERSION     מספר הגרסה. שינויו על main מפרסם רילייס
 ```
 

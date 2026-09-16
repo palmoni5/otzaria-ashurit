@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import hashlib
+import re
 import sys
 from pathlib import Path
 
@@ -92,6 +94,38 @@ def _charstring_widths(font: TTFont) -> list[str]:
     return bad[:5]
 
 
+def package_contract(built: Path) -> list[str]:
+    """חוזה חבילת ה-Flutter. שם החבילה, נתיב ה-path ושמות הקבצים הם ממשק
+    שאוצריא נשענת עליו; שינוי בהם שובר את הבנייה שלה בלי שום אזהרה."""
+    import package as packaging
+
+    root = Path(__file__).resolve().parents[1]
+    pubspec = root / "package" / "pubspec.yaml"
+    lib = root / "package" / "lib"
+    bad = []
+    if not pubspec.exists():
+        return ["package/pubspec.yaml חסר"]
+
+    text = pubspec.read_text(encoding="utf-8")
+    name = re.search(r"^name:\s*(\S+)$", text, re.M)
+    version = re.search(r"^version:\s*(\S+)$", text, re.M)
+    if not name or name.group(1) != packaging.NAME:
+        bad.append(f"שם החבילה אינו {packaging.NAME}")
+    expected = packaging.dart_version(fontinfo.VERSION)
+    if not version or version.group(1) != expected:
+        bad.append(f"גרסת החבילה אינה נגזרת מ-VERSION: ציפינו ל-{expected}")
+    if not (root / "package" / "LICENSE").exists():
+        bad.append("package/LICENSE חסר")
+
+    for master in MASTERS:
+        shipped = lib / master.file_name
+        if not shipped.exists():
+            bad.append(f"חסר בחבילה: lib/{master.file_name}")
+        elif hashlib.sha256(shipped.read_bytes()).digest() !=                 hashlib.sha256((built / master.file_name).read_bytes()).digest():
+            bad.append(f"הקובץ שבחבילה אינו הבנייה הנוכחית: {master.file_name}")
+    return bad
+
+
 def metric_compatibility(paths: dict[str, Path]) -> list[str]:
     """כל ארבעת הקבצים חייבים אותם רוחבי גליף: הטורים בתיקון קוראים מיושרים
     זה מול זה, והחלפת משקל או משפחה אסור שתזיז אף שורה."""
@@ -126,6 +160,9 @@ if __name__ == "__main__":
         bad = check(path, master)
         print(f"{path.name}: " + ("תקין" if not bad else "; ".join(bad)))
         failed |= bool(bad)
+    for problem in package_contract(out):
+        print(problem)
+        failed = True
     for problem in metric_compatibility(paths):
         print(problem)
         failed = True
