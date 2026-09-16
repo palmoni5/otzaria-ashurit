@@ -27,7 +27,6 @@ PRIVATE = [
     ("StdHW", "postscriptStdHW"), ("StdVW", "postscriptStdVW"),
     ("BlueFuzz", "postscriptBlueFuzz"), ("BlueScale", "postscriptBlueScale"),
     ("BlueShift", "postscriptBlueShift"), ("ForceBold", "postscriptForceBold"),
-    ("nominalWidthX", "postscriptNominalWidthX"), ("defaultWidthX", "postscriptDefaultWidthX"),
 ]
 
 OS2 = [
@@ -95,6 +94,12 @@ def build(ufo: Path, ps_name: str, layout: Path | None = None) -> TTFont:
         value = getattr(info, source, None)
         if value is not None:
             private[key] = value
+    # ``T2CharStringPen`` כותב תמיד את הרוחב המוחלט, ואילו ב-CFF הרוחב
+    # שבראש ה-charstring הוא ההפרש מ-nominalWidthX. כל ערך אחר מאפס היה
+    # מנפח כל advance — ו-hmtx היה נשאר תקין, ולכן הדבר אינו נתפס בקריאה
+    # רגילה אלא רק במנוע שקורא את הרוחב מן ה-CFF (Skia).
+    private["nominalWidthX"] = 0
+    private["defaultWidthX"] = 0
 
     charstrings = {}
     for name in order:

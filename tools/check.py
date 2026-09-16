@@ -5,6 +5,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+from fontTools.misc.psCharStrings import T2WidthExtractor
 from fontTools.pens.boundsPen import BoundsPen
 from fontTools.ttLib import TTFont
 
@@ -43,6 +44,8 @@ def check(path: Path, master) -> list[str]:
     if pointed != ("Nikud" in master.family):
         bad.append("כיסוי הניקוד אינו תואם למשפחה")
 
+    bad += _charstring_widths(font)
+
     os2 = font["OS/2"]
     glyph_set = font.getGlyphSet()
     top, bottom = 0, 0
@@ -65,6 +68,28 @@ def check(path: Path, master) -> list[str]:
     if names.get(1) != master.family or names.get(6) != master.ps_name:
         bad.append("שמות המשפחה אינם תואמים")
     return bad
+
+
+def _charstring_widths(font: TTFont) -> list[str]:
+    """הרוחב שבראש ה-charstring מול hmtx.
+
+    ב-CFF הרוחב נכתב כהפרש מ-``nominalWidthX``, ואילו fontTools ו-hmtx
+    מחזירים את הרוחב המוחלט. אי-התאמה כאן אינה נראית בשום קריאה רגילה,
+    אבל Skia קוראת את הרוחב מן ה-CFF והטקסט יוצא מרוח.
+    """
+    cff = font["CFF "].cff
+    top = cff[cff.fontNames[0]]
+    private = top.Private
+    nominal = getattr(private, "nominalWidthX", 0)
+    default = getattr(private, "defaultWidthX", 0)
+    bad = []
+    for name in font.getGlyphOrder():
+        charstring = top.CharStrings[name]
+        extractor = T2WidthExtractor([], charstring.globalSubrs, nominal, default)
+        extractor.execute(charstring)
+        if extractor.width != font["hmtx"][name][0]:
+            bad.append(f"רוחב ב-CFF של {name}: {extractor.width} != {font['hmtx'][name][0]}")
+    return bad[:5]
 
 
 def metric_compatibility(paths: dict[str, Path]) -> list[str]:
