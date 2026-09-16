@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>ascender</key>
-    <integer>1041</integer>
+    <integer>1065</integer>
     <key>capHeight</key>
     <integer>0</integer>
     <key>descender</key>
@@ -15,7 +15,7 @@
     <key>openTypeHeadLowestRecPPEM</key>
     <integer>8</integer>
     <key>openTypeHheaAscender</key>
-    <integer>1041</integer>
+    <integer>1065</integer>
     <key>openTypeHheaDescender</key>
     <integer>-424</integer>
     <key>openTypeHheaLineGap</key>

@@ -15,7 +15,9 @@ LICENSE = (
     "non-commercial use. Any public, shared or commercial use — including "
     "bundling in or distribution with any product, service, website or "
     "application — requires prior written permission from the copyright "
-    "holder. See the LICENSE file in the source repository."
+    "holder. The Otzaria application (otzaria.org) is excepted and may "
+    "bundle and embed these fonts. See the LICENSE file in the source "
+    "repository."
 )
 LICENSE_URL = "https://github.com/palmoni5/otzaria-ashurit/blob/main/LICENSE"
 DESIGNER = "Otzaria Project"
@@ -68,7 +70,7 @@ NUN_HAFUKHA = 0x05C6
 
 # האותיות שסופר מרחיב כדי ליישר את הטור. א' אינה בהן: אין בה גזע אנכי אלא
 # אלכסון, ומתיחה אופקית משטחת את זוויתו.
-WIDE_LETTERS = "הלםרת"
+WIDE_LETTERS = "הלםרתד"
 
 # מדרגות הרוחב, כשיעור מרוחב הדיו. המנוע בוחר מדרגה לפי השארית בשורה.
 WIDE_STEPS = (1.15, 1.3, 1.5, 1.75, 2.0, 2.5)
