@@ -78,7 +78,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add package test_consumer
           git commit -m "חבילת Flutter: בנייה מקומיט ${GITHUB_SHA::7}"
-          git push origin HEAD:main
+          # שתי ריצות במקביל — הישנה תדחה. הקימוט נגזר מן המקור, ולכן די
+          # ברביסה וניסיון שני; כישלון שאחריו הוא תקלה אמיתית.
+          git push origin HEAD:main || {
+            git pull --rebase origin main
+            git push origin HEAD:main
+          }
 
       - name: רילייס אם הגרסה השתנתה
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
