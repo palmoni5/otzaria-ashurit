@@ -1,0 +1,63 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: התקנת תלויות
+        run: pip install -r requirements.txt -r requirements-qa.txt
+
+      - name: בניית כל המשקלים
+        run: python src/build.py out
+
+      - name: בדיקות תקינות
+        run: python tools/check.py out
+
+      - name: בנייה משוחזרת — אותו קומיט, אותם בתים
+        run: |
+          python src/build.py out-again
+          for file in out/*.otf; do
+            cmp "$file" "out-again/$(basename "$file")"
+          done
+
+      - name: דפי הוכחה
+        run: python tools/proof.py out qa
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fonts
+          path: out/*.otf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: proof
+          path: qa/*.png
+
+      - name: רילייס אם הגרסה השתנתה
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          version="$(cat VERSION)"
+          tag="v$version"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "רילייס $tag כבר קיים — אין מה לפרסם"
+            exit 0
+          fi
+          gh release create "$tag" out/*.otf \
+            --title "Otzaria Ashurit $version" \
+            --notes "נבנה אוטומטית מקומיט ${GITHUB_SHA}."
