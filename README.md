@@ -89,6 +89,16 @@ flutter:
 `package/pubspec.yaml` נוצר מ-`tools/package.py` ואין לערכו ביד; גרסתו
 נגזרת מ-`VERSION` — `1.002` הופך ל-`1.0.2`.
 
+`test_consumer/` הוא צרכן דמה שמצהיר על הגופנים בדיוק כמו אוצריא, ומודד
+כל גליף במנוע עצמו מול מה שהגופן מצהיר ב-hmtx. זו אינה כפילות לבדיקות
+שבפייתון: Skia קוראת את רוחב ה-advance מן ה-CFF, וטעות שם אינה נראית
+בשום קריאה דרך fontTools. הטבלה `test/expected.g.dart` נוצרת מן הגופן
+הבנוי ואין לערכה ביד.
+
+```bash
+cd test_consumer && flutter pub get && flutter test
+```
+
 ## מבנה המאגר
 
 ```

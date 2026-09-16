@@ -25,7 +25,9 @@ jobs:
         run: python src/build.py out
 
       - name: הרכבת חבילת ה-Flutter
-        run: python tools/package.py out
+        run: |
+          python tools/package.py out
+          python tools/expected_widths.py out
 
       - name: בדיקות תקינות וחוזה החבילה
         run: python tools/check.py out
@@ -50,18 +52,31 @@ jobs:
           name: proof
           path: qa/*.png
 
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      # Skia קוראת את רוחב ה-advance מן ה-CFF ולא מ-hmtx, ולכן שגיאה שם
+      # חומקת מכל בדיקה בצד פייתון. כאן נמדד הגופן במנוע עצמו.
+      - name: מדידה במנוע דרך החבילה
+        working-directory: test_consumer
+        run: |
+          flutter pub get
+          flutter test
+
       # התלות של אוצריא היא תלות git, ולכן הגופנים חייבים להיות בעץ עצמו
       # ולא רק בנכסי הרילייס. דחיפה עם GITHUB_TOKEN אינה מפעילה ריצה נוספת.
       - name: קימוט החבילה אם השתנתה
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: |
-          if git diff --quiet -- package; then
+          if git diff --quiet -- package test_consumer; then
             echo "החבילה זהה למה שבעץ"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add package
+          git add package test_consumer
           git commit -m "חבילת Flutter: בנייה מקומיט ${GITHUB_SHA::7}"
           git push origin HEAD:main
 

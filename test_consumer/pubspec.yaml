@@ -1,0 +1,32 @@
+# צרכן דמה לבדיקת החבילה במנוע עצמו. מצהיר על הגופנים בדיוק כפי
+# שאוצריא מצהירה עליהם — הצהרה שונה כאן לא הייתה בודקת את החוזה.
+name: ashurit_consumer_test
+description: בדיקה שהמנוע מודד את הגופן כפי שהוא מצהיר.
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  otzaria_ashurit:
+    path: ../package
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  fonts:
+    - family: Otzaria Ashurit
+      fonts:
+        - asset: packages/otzaria_ashurit/OtzariaAshurit-Regular.otf
+        - asset: packages/otzaria_ashurit/OtzariaAshurit-Bold.otf
+          weight: 700
+    - family: Otzaria Ashurit Nikud
+      fonts:
+        - asset: packages/otzaria_ashurit/OtzariaAshuritNikud-Regular.otf
+        - asset: packages/otzaria_ashurit/OtzariaAshuritNikud-Bold.otf
+          weight: 700
