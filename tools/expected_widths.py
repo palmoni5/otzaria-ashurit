@@ -48,7 +48,16 @@ def build(built: Path) -> Path:
             if code in cmap:
                 lines.append(f"    0x{code:04X}: {font['hmtx'][cmap[code]][0]}.0,\n")
         lines.append("  },\n")
-    lines.append("};\n")
+    lines.append("};\n\n")
+
+    lines.append("/// סימני הניקוד והטעמים. סימן אינו מרחיב את האות שהוא יושב\n")
+    lines.append("/// עליה, ולכן צירוף שרוחבו גדל מעיד על גליף שהוזרק.\n")
+    lines.append("const List<int> marks = [\n")
+    lines += [f"  0x{code:04X},\n" for code in fontinfo.COMBINING]
+    lines.append("];\n\nconst List<int> letters = [\n")
+    lines += [f"  0x{ord(letter):04X},\n" for letter in fontinfo.LETTERS]
+    lines.append("];\n")
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text("".join(lines), encoding="utf-8")
     return OUT

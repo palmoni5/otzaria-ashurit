@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -78,6 +79,10 @@ WIDE_STEPS = (1.15, 1.3, 1.5, 1.75, 2.0, 2.5)
 # כל סימני הניקוד והטעמים שמשפחת הניקוד חייבת לכסות. נו"ן הפוכה יושבת
 # בתוך הטווח הזה ואינה סימן, ולכן היא מוצאת ממנו.
 MARKS = [c for c in range(0x0591, 0x05C8) if c != NUN_HAFUKHA]
+
+# מתוכם, המשולבים בלבד. מקף, פסק וסוף פסוק יושבים באותו טווח אך נושאים
+# מהלך משלהם, ולכן הם כן מרחיבים את התיבה.
+COMBINING = [c for c in MARKS if unicodedata.category(chr(c)) == "Mn"]
 
 # בלוק PUA לכל אות מתרחבת: E100 + סדר האות * 8 + מספר המדרגה.
 PUA_BASE = 0xE100

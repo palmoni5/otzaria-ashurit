@@ -71,6 +71,24 @@ void main() {
     }
   });
 
+  // גופן המקור סימן אות סופית נושאת ניקוד בעיגול מנוקד שרוחבו 0.576em.
+  // בתנ"ך עם טעמים זה צירוף רגיל, והעיגול גם עיוות את רוחב השיטה.
+  test('סימן אינו מרחיב את האות ואינו מזריק גליף', () {
+    for (final family in [ashuritFamily, ashuritNikudFamily]) {
+      for (final letter in letters) {
+        final bare = advance(String.fromCharCode(letter), family);
+        for (final mark in marks) {
+          final combined = advance(
+              String.fromCharCode(letter) + String.fromCharCode(mark), family);
+          expect(combined, closeTo(bare, 0.5),
+              reason: '$family '
+                  'U+${letter.toRadixString(16).toUpperCase()} + '
+                  'U+${mark.toRadixString(16).toUpperCase()}');
+        }
+      }
+    }
+  });
+
   test('ל\' חורגת מן השורה אך אינה נחתכת', () {
     final painter = TextPainter(
       text: const TextSpan(text: 'ל', style: TextStyle(fontFamily: ashuritFamily, fontSize: kEm)),
