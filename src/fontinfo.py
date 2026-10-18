@@ -68,6 +68,7 @@ MASTERS = [
 
 LETTERS = [chr(c) for c in range(0x05D0, 0x05EB)]
 NUN_HAFUKHA = 0x05C6
+VAV_KETIA_CODES = tuple(range(0xE140, 0xE14B))
 
 # האותיות שסופר מרחיב כדי ליישר את הטור. א' אינה בהן: אין בה גזע אנכי אלא
 # אלכסון, ומתיחה אופקית משטחת את זוויתו.

@@ -30,6 +30,7 @@ const Map<String, Map<int, double>> expectedWidths = {
 
 def codepoints() -> list[int]:
     out = [ord(c) for c in fontinfo.LETTERS] + [fontinfo.NUN_HAFUKHA]
+    out += list(fontinfo.VAV_KETIA_CODES)
     out += [fontinfo.pua_code(letter, step)
             for letter in fontinfo.WIDE_LETTERS
             for step in range(len(fontinfo.WIDE_STEPS))]
@@ -56,6 +57,7 @@ def build(built: Path) -> Path:
     lines += [f"  0x{code:04X},\n" for code in fontinfo.COMBINING]
     lines.append("];\n\nconst List<int> letters = [\n")
     lines += [f"  0x{ord(letter):04X},\n" for letter in fontinfo.LETTERS]
+    lines += [f"  0x{code:04X},\n" for code in fontinfo.VAV_KETIA_CODES]
     lines.append("];\n")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
