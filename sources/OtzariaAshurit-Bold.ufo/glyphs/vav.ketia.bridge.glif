@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="vav.ketia.bridge" format="2">
+  <advance width="301"/>
+  <unicode hex="E148"/>
+  <outline>
+    <contour>
+      <point x="161.0" y="587.0" type="curve" smooth="yes"/>
+      <point x="28.0" y="587.0" type="line" smooth="yes"/>
+      <point x="21.0" y="587.0"/>
+      <point x="18.0" y="584.0"/>
+      <point x="18.0" y="577.0" type="curve" smooth="yes"/>
+      <point x="18.0" y="574.0" type="line"/>
+      <point x="30.0" y="538.0"/>
+      <point x="36.0" y="498.0"/>
+      <point x="36.0" y="456.0" type="curve" smooth="yes"/>
+      <point x="36.0" y="430.0"/>
+      <point x="35.0" y="414.0"/>
+      <point x="33.0" y="406.0" type="curve"/>
+      <point x="33.0" y="404.0"/>
+      <point x="33.0" y="401.0"/>
+      <point x="34.0" y="399.0" type="curve"/>
+      <point x="36.0" y="396.0"/>
+      <point x="38.0" y="395.0"/>
+      <point x="42.0" y="394.0" type="curve"/>
+      <point x="175.0" y="394.0" type="line"/>
+      <point x="184.0" y="304.0" type="line"/>
+      <point x="184.0" y="300.0" type="line"/>
+      <point x="185.0" y="288.0" type="line"/>
+      <point x="185.2184600830078" y="285.1600036621094" type="line"/>
+      <point x="223.82015991210938" y="285.1600036621094" type="line"/>
+      <point x="223.82015991210938" y="248.1999969482422" type="line"/>
+      <point x="189.13845825195312" y="248.1999969482422" type="line"/>
+      <point x="191.0" y="224.0" type="line"/>
+      <point x="192.0" y="212.0" type="line"/>
+      <point x="194.0" y="199.0" type="line"/>
+      <point x="195.0" y="186.0" type="line"/>
+      <point x="196.0" y="174.0" type="line"/>
+      <point x="198.0" y="161.0" type="line"/>
+      <point x="199.0" y="148.0" type="line"/>
+      <point x="200.0" y="136.0" type="line"/>
+      <point x="201.0" y="123.0" type="line"/>
+      <point x="203.0" y="110.0" type="line"/>
+      <point x="204.0" y="98.0" type="line"/>
+      <point x="207.0" y="72.0" type="line"/>
+      <point x="209.0" y="60.0" type="line"/>
+      <point x="211.0" y="34.0" type="line"/>
+      <point x="212.0" y="22.0" type="line"/>
+      <point x="213.0" y="9.0" type="line"/>
+      <point x="215.0" y="-4.0" type="line"/>
+      <point x="216.0" y="-16.0" type="line"/>
+      <point x="224.0" y="-28.0" type="line"/>
+      <point x="231.0" y="-29.0" type="line"/>
+      <point x="235.0" y="-29.0"/>
+      <point x="237.0" y="-29.0"/>
+      <point x="239.0" y="-28.0" type="curve"/>
+      <point x="242.0" y="-16.0" type="line"/>
+      <point x="246.0" y="-4.0" type="line"/>
+      <point x="249.0" y="9.0" type="line"/>
+      <point x="253.0" y="22.0" type="line"/>
+      <point x="257.0" y="34.0" type="line"/>
+      <point x="266.0" y="60.0" type="line"/>
+      <point x="269.0" y="72.0" type="line"/>
+      <point x="271.0" y="85.0" type="line"/>
+      <point x="271.0" y="248.1999969482422" type="line"/>
+      <point x="232.39830017089844" y="248.1999969482422" type="line"/>
+      <point x="232.39830017089844" y="285.1600036621094" type="line"/>
+      <point x="271.0" y="285.1600036621094" type="line"/>
+      <point x="271.0" y="300.0" type="line"/>
+      <point x="270.0" y="313.0" type="line"/>
+      <point x="270.0" y="351.0" type="line"/>
+      <point x="269.0" y="433.0" type="line" smooth="yes"/>
+      <point x="268.0" y="470.0"/>
+      <point x="261.0" y="502.0"/>
+      <point x="246.0" y="530.0" type="curve" smooth="yes"/>
+      <point x="226.0" y="568.0"/>
+      <point x="198.0" y="587.0"/>
+    </contour>
+    <contour>
+      <point x="213.0" y="-20.0" type="line"/>
+      <point x="213.0" y="-23.0"/>
+      <point x="215.0" y="-25.0"/>
+      <point x="218.0" y="-26.0" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

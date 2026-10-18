@@ -563,6 +563,17 @@
           <!-- BacktrackGlyphCount=1 -->
           <BacktrackCoverage index="0">
             <Glyph value="uni05D5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BacktrackCoverage>
           <!-- InputGlyphCount=1 -->
           <InputCoverage index="0">
@@ -764,6 +775,17 @@
             <Glyph value="uni05D3.w3"/>
             <Glyph value="uni05D3.w4"/>
             <Glyph value="uni05D3.w5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
@@ -777,7 +799,7 @@
             </MarkRecord>
           </MarkArray>
           <BaseArray>
-            <!-- BaseCount=53 -->
+            <!-- BaseCount=64 -->
             <BaseRecord index="0">
               <BaseAnchor index="0" Format="1">
                 <XCoordinate value="356"/>
@@ -1096,6 +1118,72 @@
                 <YCoordinate value="240"/>
               </BaseAnchor>
             </BaseRecord>
+            <BaseRecord index="53">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="54">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="55">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="56">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="57">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="58">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="59">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="60">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="61">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="62">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="63">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="87"/>
+                <YCoordinate value="220"/>
+              </BaseAnchor>
+            </BaseRecord>
           </BaseArray>
         </MarkBasePos>
       </Lookup>
@@ -1185,6 +1273,17 @@
             <Glyph value="uni05D3.w3"/>
             <Glyph value="uni05D3.w4"/>
             <Glyph value="uni05D3.w5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
@@ -1289,7 +1388,7 @@
             </MarkRecord>
           </MarkArray>
           <BaseArray>
-            <!-- BaseCount=64 -->
+            <!-- BaseCount=75 -->
             <BaseRecord index="0">
               <BaseAnchor index="0" Format="1">
                 <XCoordinate value="320"/>
@@ -1674,6 +1773,72 @@
                 <YCoordinate value="0"/>
               </BaseAnchor>
             </BaseRecord>
+            <BaseRecord index="64">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="65">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="66">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="67">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="68">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="69">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="70">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="71">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="72">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="73">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="74">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="146"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
           </BaseArray>
         </MarkBasePos>
       </Lookup>
@@ -1771,6 +1936,17 @@
             <Glyph value="uni05D3.w3"/>
             <Glyph value="uni05D3.w4"/>
             <Glyph value="uni05D3.w5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
@@ -1931,7 +2107,7 @@
             </MarkRecord>
           </MarkArray>
           <BaseArray>
-            <!-- BaseCount=64 -->
+            <!-- BaseCount=75 -->
             <BaseRecord index="0">
               <BaseAnchor index="0" Format="1">
                 <XCoordinate value="335"/>
@@ -2316,6 +2492,72 @@
                 <YCoordinate value="0"/>
               </BaseAnchor>
             </BaseRecord>
+            <BaseRecord index="64">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="65">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="66">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="67">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="68">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="69">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="70">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="71">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="72">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="73">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="74">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
           </BaseArray>
         </MarkBasePos>
       </Lookup>
@@ -2411,6 +2653,17 @@
             <Glyph value="uni05E9"/>
             <Glyph value="uni05EA"/>
             <Glyph value="uni25CC"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BacktrackCoverage>
           <!-- InputGlyphCount=1 -->
           <InputCoverage index="0">
@@ -2483,6 +2736,17 @@
             <Glyph value="uni05E9"/>
             <Glyph value="uni05EA"/>
             <Glyph value="uni25CC"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BacktrackCoverage>
           <!-- InputGlyphCount=1 -->
           <InputCoverage index="0">
@@ -2536,6 +2800,17 @@
             <Glyph value="uni05E9"/>
             <Glyph value="uni05EA"/>
             <Glyph value="uni25CC"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BacktrackCoverage>
           <!-- InputGlyphCount=1 -->
           <InputCoverage index="0">
@@ -2590,6 +2865,17 @@
             <Glyph value="uni05E9"/>
             <Glyph value="uni05EA"/>
             <Glyph value="uni25CC"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BacktrackCoverage>
           <!-- InputGlyphCount=1 -->
           <InputCoverage index="0">
@@ -2694,6 +2980,17 @@
             <Glyph value="uni05D3.w3"/>
             <Glyph value="uni05D3.w4"/>
             <Glyph value="uni05D3.w5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
@@ -2728,7 +3025,7 @@
             </MarkRecord>
           </MarkArray>
           <BaseArray>
-            <!-- BaseCount=64 -->
+            <!-- BaseCount=75 -->
             <BaseRecord index="0">
               <BaseAnchor index="0" Format="1">
                 <XCoordinate value="63"/>
@@ -3113,6 +3410,72 @@
                 <YCoordinate value="0"/>
               </BaseAnchor>
             </BaseRecord>
+            <BaseRecord index="64">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="65">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="66">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="67">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="68">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="69">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="70">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="71">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="72">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="73">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="74">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="63"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
           </BaseArray>
         </MarkBasePos>
       </Lookup>
@@ -3190,6 +3553,17 @@
             <Glyph value="uni05D3.w3"/>
             <Glyph value="uni05D3.w4"/>
             <Glyph value="uni05D3.w5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
@@ -3210,7 +3584,7 @@
             </MarkRecord>
           </MarkArray>
           <BaseArray>
-            <!-- BaseCount=64 -->
+            <!-- BaseCount=75 -->
             <BaseRecord index="0">
               <BaseAnchor index="0" Format="1">
                 <XCoordinate value="262"/>
@@ -3595,6 +3969,72 @@
                 <YCoordinate value="0"/>
               </BaseAnchor>
             </BaseRecord>
+            <BaseRecord index="64">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="65">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="66">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="67">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="68">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="69">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="70">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="71">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="72">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="73">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="74">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="469"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
           </BaseArray>
         </MarkBasePos>
       </Lookup>
@@ -3672,6 +4112,17 @@
             <Glyph value="uni05D3.w3"/>
             <Glyph value="uni05D3.w4"/>
             <Glyph value="uni05D3.w5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
@@ -3692,7 +4143,7 @@
             </MarkRecord>
           </MarkArray>
           <BaseArray>
-            <!-- BaseCount=64 -->
+            <!-- BaseCount=75 -->
             <BaseRecord index="0">
               <BaseAnchor index="0" Format="1">
                 <XCoordinate value="262"/>
@@ -4077,6 +4528,72 @@
                 <YCoordinate value="0"/>
               </BaseAnchor>
             </BaseRecord>
+            <BaseRecord index="64">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="65">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="66">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="67">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="68">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="69">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="70">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="71">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="72">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="73">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="74">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="494"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
           </BaseArray>
         </MarkBasePos>
       </Lookup>
@@ -4291,6 +4808,17 @@
             <Glyph value="uni05D3.w3"/>
             <Glyph value="uni05D3.w4"/>
             <Glyph value="uni05D3.w5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
@@ -4311,7 +4839,7 @@
             </MarkRecord>
           </MarkArray>
           <BaseArray>
-            <!-- BaseCount=64 -->
+            <!-- BaseCount=75 -->
             <BaseRecord index="0">
               <BaseAnchor index="0" Format="1">
                 <XCoordinate value="165"/>
@@ -4696,6 +5224,72 @@
                 <YCoordinate value="0"/>
               </BaseAnchor>
             </BaseRecord>
+            <BaseRecord index="64">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="65">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="66">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="67">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="68">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="69">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="70">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="71">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="72">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="73">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="74">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="262"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
           </BaseArray>
         </MarkBasePos>
       </Lookup>
@@ -4783,6 +5377,17 @@
             <Glyph value="uni05D3.w3"/>
             <Glyph value="uni05D3.w4"/>
             <Glyph value="uni05D3.w5"/>
+            <Glyph value="vav.ketia.small"/>
+            <Glyph value="vav.ketia.yod"/>
+            <Glyph value="vav.ketia.short"/>
+            <Glyph value="vav.ketia.split"/>
+            <Glyph value="vav.ketia.splitDiagonal"/>
+            <Glyph value="vav.ketia.splitHigh"/>
+            <Glyph value="vav.ketia.shortTail"/>
+            <Glyph value="vav.ketia.smallTail"/>
+            <Glyph value="vav.ketia.bridge"/>
+            <Glyph value="vav.ketia.bridgeDiagonal"/>
+            <Glyph value="vav.ketia.insetDiagonal"/>
           </BaseCoverage>
           <!-- ClassCount=1 -->
           <MarkArray>
@@ -4873,7 +5478,7 @@
             </MarkRecord>
           </MarkArray>
           <BaseArray>
-            <!-- BaseCount=64 -->
+            <!-- BaseCount=75 -->
             <BaseRecord index="0">
               <BaseAnchor index="0" Format="1">
                 <XCoordinate value="126"/>
@@ -5258,6 +5863,72 @@
                 <YCoordinate value="0"/>
               </BaseAnchor>
             </BaseRecord>
+            <BaseRecord index="64">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="65">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="66">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="67">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="68">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="69">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="70">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="71">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="72">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="73">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
+            <BaseRecord index="74">
+              <BaseAnchor index="0" Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </BaseAnchor>
+            </BaseRecord>
           </BaseArray>
         </MarkBasePos>
       </Lookup>
@@ -5524,6 +6195,17 @@
       <ClassDef glyph="uni05F3" class="1"/>
       <ClassDef glyph="uni05F4" class="1"/>
       <ClassDef glyph="uni25CC" class="1"/>
+      <ClassDef glyph="vav.ketia.bridge" class="1"/>
+      <ClassDef glyph="vav.ketia.bridgeDiagonal" class="1"/>
+      <ClassDef glyph="vav.ketia.insetDiagonal" class="1"/>
+      <ClassDef glyph="vav.ketia.short" class="1"/>
+      <ClassDef glyph="vav.ketia.shortTail" class="1"/>
+      <ClassDef glyph="vav.ketia.small" class="1"/>
+      <ClassDef glyph="vav.ketia.smallTail" class="1"/>
+      <ClassDef glyph="vav.ketia.split" class="1"/>
+      <ClassDef glyph="vav.ketia.splitDiagonal" class="1"/>
+      <ClassDef glyph="vav.ketia.splitHigh" class="1"/>
+      <ClassDef glyph="vav.ketia.yod" class="1"/>
     </GlyphClassDef>
     <MarkGlyphSetsDef>
       <MarkSetTableFormat value="1"/>

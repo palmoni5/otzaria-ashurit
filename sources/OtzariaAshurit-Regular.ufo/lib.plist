@@ -70,6 +70,17 @@
       <string>uni05D3.w3</string>
       <string>uni05D3.w4</string>
       <string>uni05D3.w5</string>
+      <string>vav.ketia.small</string>
+      <string>vav.ketia.yod</string>
+      <string>vav.ketia.short</string>
+      <string>vav.ketia.split</string>
+      <string>vav.ketia.splitDiagonal</string>
+      <string>vav.ketia.splitHigh</string>
+      <string>vav.ketia.shortTail</string>
+      <string>vav.ketia.smallTail</string>
+      <string>vav.ketia.bridge</string>
+      <string>vav.ketia.bridgeDiagonal</string>
+      <string>vav.ketia.insetDiagonal</string>
     </array>
   </dict>
 </plist>

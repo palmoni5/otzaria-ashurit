@@ -244,5 +244,27 @@
     <string>uni05F_4.glif</string>
     <key>uni25CC</key>
     <string>uni25C_C_.glif</string>
+    <key>vav.ketia.bridge</key>
+    <string>vav.ketia.bridge.glif</string>
+    <key>vav.ketia.bridgeDiagonal</key>
+    <string>vav.ketia.bridgeD_iagonal.glif</string>
+    <key>vav.ketia.insetDiagonal</key>
+    <string>vav.ketia.insetD_iagonal.glif</string>
+    <key>vav.ketia.short</key>
+    <string>vav.ketia.short.glif</string>
+    <key>vav.ketia.shortTail</key>
+    <string>vav.ketia.shortT_ail.glif</string>
+    <key>vav.ketia.small</key>
+    <string>vav.ketia.small.glif</string>
+    <key>vav.ketia.smallTail</key>
+    <string>vav.ketia.smallT_ail.glif</string>
+    <key>vav.ketia.split</key>
+    <string>vav.ketia.split.glif</string>
+    <key>vav.ketia.splitDiagonal</key>
+    <string>vav.ketia.splitD_iagonal.glif</string>
+    <key>vav.ketia.splitHigh</key>
+    <string>vav.ketia.splitH_igh.glif</string>
+    <key>vav.ketia.yod</key>
+    <string>vav.ketia.yod.glif</string>
   </dict>
 </plist>

@@ -28,6 +28,23 @@ def check(path: Path, master) -> list[str]:
     if fontinfo.NUN_HAFUKHA not in cmap:
         bad.append("נו\"ן הפוכה חסרה")
 
+    vav = cmap[0x05D5]
+    for code in fontinfo.VAV_KETIA_CODES:
+        if code not in cmap:
+            bad.append(f"חלופת וי״ו קטיעא חסרה: U+{code:04X}")
+            continue
+        name = cmap[code]
+        pen = BoundsPen(font.getGlyphSet())
+        font.getGlyphSet()[name].draw(pen)
+        if not pen.bounds:
+            bad.append(f"חלופת וי״ו קטיעא ריקה: U+{code:04X}")
+        if font["hmtx"][name][0] != font["hmtx"][vav][0]:
+            bad.append(f"חלופת וי״ו קטיעא משנה את רוחב התיבה: U+{code:04X}")
+        if "GDEF" in font and font["GDEF"].table.GlyphClassDef.classDefs.get(name) != 1:
+            bad.append(f"חלופת וי״ו קטיעא אינה מסווגת כאות בסיס: U+{code:04X}")
+
+    bad += _ketia_positioning(font)
+
     for letter in fontinfo.WIDE_LETTERS:
         widths = []
         for step in range(len(fontinfo.WIDE_STEPS)):
@@ -78,6 +95,27 @@ def check(path: Path, master) -> list[str]:
     if names.get(1) != master.family or names.get(6) != master.ps_name:
         bad.append("שמות המשפחה אינם תואמים")
     return bad
+
+
+def _ketia_positioning(font: TTFont) -> list[str]:
+    if "GPOS" not in font:
+        return []
+    cmap = font.getBestCmap()
+    vav = cmap[0x05D5]
+    alternates = {cmap[c] for c in fontinfo.VAV_KETIA_CODES if c in cmap}
+    for lookup in font["GPOS"].table.LookupList.Lookup:
+        for table in lookup.SubTable:
+            coverage = getattr(table, "BaseCoverage", None)
+            if coverage and vav in coverage.glyphs:
+                records = dict(zip(coverage.glyphs, table.BaseArray.BaseRecord))
+                if not alternates <= records.keys() or any(records[n] != records[vav] for n in alternates):
+                    return ["עוגני הניקוד של חלופת וי״ו קטיעא שונים מעוגני וי״ו"]
+            if lookup.LookupType in (7, 8) and table.Format == 3:
+                for key in ("Coverage", "BacktrackCoverage", "InputCoverage", "LookAheadCoverage"):
+                    for context in getattr(table, key, []):
+                        if vav in context.glyphs and not alternates <= set(context.glyphs):
+                            return ["חלופת וי״ו קטיעא חסרה בכלל מיקום הקשרי"]
+    return []
 
 
 def _charstring_widths(font: TTFont) -> list[str]:
