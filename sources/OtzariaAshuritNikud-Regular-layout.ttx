@@ -1866,6 +1866,7 @@
             <Glyph value="uni05B6"/>
             <Glyph value="uni05B7"/>
             <Glyph value="uni05B8"/>
+            <Glyph value="uni05C7"/>
             <Glyph value="uni05BB"/>
             <Glyph value="uni05BD"/>
             <Glyph value="uni05B305BD"/>
@@ -2080,25 +2081,32 @@
             <MarkRecord index="18">
               <Class value="0"/>
               <MarkAnchor Format="1">
-                <XCoordinate value="141"/>
+                <XCoordinate value="87"/>
                 <YCoordinate value="0"/>
               </MarkAnchor>
             </MarkRecord>
             <MarkRecord index="19">
               <Class value="0"/>
               <MarkAnchor Format="1">
-                <XCoordinate value="24"/>
+                <XCoordinate value="141"/>
                 <YCoordinate value="0"/>
               </MarkAnchor>
             </MarkRecord>
             <MarkRecord index="20">
               <Class value="0"/>
               <MarkAnchor Format="1">
-                <XCoordinate value="223"/>
+                <XCoordinate value="24"/>
                 <YCoordinate value="0"/>
               </MarkAnchor>
             </MarkRecord>
             <MarkRecord index="21">
+              <Class value="0"/>
+              <MarkAnchor Format="1">
+                <XCoordinate value="223"/>
+                <YCoordinate value="0"/>
+              </MarkAnchor>
+            </MarkRecord>
+            <MarkRecord index="22">
               <Class value="0"/>
               <MarkAnchor Format="1">
                 <XCoordinate value="97"/>
@@ -2581,6 +2589,7 @@
             <Glyph value="uni05B6"/>
             <Glyph value="uni05B7"/>
             <Glyph value="uni05B8"/>
+            <Glyph value="uni05C7"/>
             <Glyph value="uni05BB"/>
             <Glyph value="uni05B305BD"/>
           </InputCoverage>
@@ -2604,6 +2613,7 @@
             <Glyph value="uni05B6"/>
             <Glyph value="uni05B7"/>
             <Glyph value="uni05B8"/>
+            <Glyph value="uni05C7"/>
             <Glyph value="uni05BB"/>
             <Glyph value="uni05B305BD"/>
           </InputCoverage>
@@ -4636,6 +4646,7 @@
             <Glyph value="uni05B6"/>
             <Glyph value="uni05B7"/>
             <Glyph value="uni05B8"/>
+            <Glyph value="uni05C7"/>
             <Glyph value="uni05BB"/>
             <Glyph value="uni05B305BD"/>
           </MarkCoverage>
@@ -4711,11 +4722,18 @@
             <MarkRecord index="9">
               <Class value="0"/>
               <MarkAnchor Format="1">
-                <XCoordinate value="141"/>
+                <XCoordinate value="87"/>
                 <YCoordinate value="0"/>
               </MarkAnchor>
             </MarkRecord>
             <MarkRecord index="10">
+              <Class value="0"/>
+              <MarkAnchor Format="1">
+                <XCoordinate value="141"/>
+                <YCoordinate value="0"/>
+              </MarkAnchor>
+            </MarkRecord>
+            <MarkRecord index="11">
               <Class value="0"/>
               <MarkAnchor Format="1">
                 <XCoordinate value="223"/>
@@ -5980,6 +5998,7 @@
             <Glyph value="uni05B6"/>
             <Glyph value="uni05B7"/>
             <Glyph value="uni05B8"/>
+            <Glyph value="uni05C7"/>
             <Glyph value="uni05BB"/>
             <Glyph value="uni05B305BD"/>
           </Coverage>
@@ -6003,6 +6022,7 @@
             <Glyph value="uni05B6"/>
             <Glyph value="uni05B7"/>
             <Glyph value="uni05B8"/>
+            <Glyph value="uni05C7"/>
             <Glyph value="uni05BB"/>
             <Glyph value="uni05B305BD"/>
           </BacktrackCoverage>
@@ -6045,6 +6065,7 @@
             <Glyph value="uni05B6"/>
             <Glyph value="uni05B7"/>
             <Glyph value="uni05B8"/>
+            <Glyph value="uni05C7"/>
             <Glyph value="uni05BB"/>
             <Glyph value="uni05B305BD"/>
           </InputCoverage>
@@ -6129,6 +6150,7 @@
       <ClassDef glyph="uni05C2" class="3"/>
       <ClassDef glyph="uni05C3" class="1"/>
       <ClassDef glyph="uni05C4" class="3"/>
+      <ClassDef glyph="uni05C7" class="3"/>
       <ClassDef glyph="uni05D0" class="1"/>
       <ClassDef glyph="uni05D1" class="1"/>
       <ClassDef glyph="uni05D2" class="1"/>
@@ -6229,6 +6251,7 @@
         <Glyph value="uni05B6"/>
         <Glyph value="uni05B7"/>
         <Glyph value="uni05B8"/>
+        <Glyph value="uni05C7"/>
         <Glyph value="uni05BB"/>
         <Glyph value="uni05BD"/>
         <Glyph value="uni05B305BD"/>
